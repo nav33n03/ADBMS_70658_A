@@ -1,7 +1,7 @@
-create database MyDbo;
-go
-use MyDbo;
-go
+create database nvn;
+
+use nvn;
+
 
 /*
 	MAIN OPERATORS:- QUERY-CONNECTORS
@@ -108,11 +108,7 @@ go
 insert into tab_b values(2, 'BB', 400), (3, 'CC', 100);
 go
 
-/*
-	SET OP with CTE
-	columns with duplicate values similar to other columns, 
-	have to be used together in the group-by or with aggregated functions.
-*/
+
 
 with res_set as 
 (	select a.* from tab_a a
